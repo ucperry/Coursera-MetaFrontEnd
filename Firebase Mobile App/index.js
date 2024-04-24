@@ -63,3 +63,15 @@ function appendItemToShoppingListEl(item) {
 
     shoppingListEl.append(newEl)
 }
+
+let select = document.getElementById("selectUser")
+let familyMember = ['Nanna', 'Poppa', 'Perry', 'Rhi', 'Roo', 'Trey', 'Max', 'Chase']
+
+for (let i = 0; i < familyMember.length; i++) {
+    let user = familyMember[i];
+    let el = document.createElement("option");
+    el.textContent = user;
+    el.value = user;
+    select.appendChild(el);
+}
+

@@ -21,6 +21,7 @@ html, body {
 img {
     width: 150px;
     margin: 0 auto;
+    padding-bottom: 10px;
 }
 
 input {
@@ -71,4 +72,14 @@ ul li {
 ul li:hover {
     background-color: #FFECC7;
     cursor: pointer;
+}
+
+select {
+    color: #432000;
+    background-color: #ffffff;
+    border: 1;
+    border-radius: 5px;
+    font-size: 15px;
+    text-align: center;
+    font-family: 'Rubik', sans-serif;
 }
