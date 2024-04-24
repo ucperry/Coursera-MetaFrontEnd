@@ -2,7 +2,7 @@ html, body {
     margin: 0;
     padding: 0;
     font-family: 'Rubik', sans-serif;
-    background-color: #EEF0F4;
+    background-color: rgb(192, 245, 245);
     color: #432000;
     user-select: none;
 }
@@ -15,6 +15,7 @@ html, body {
     border: black solid 5px;
     border-radius: 15px;
     padding: 40px 20px;
+    background-color: rgb(238, 241, 167);
 }
 
 img {
@@ -64,7 +65,7 @@ ul li {
     border-radius: 8px;
     flex-grow: 1;
     text-align: center;
-    box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.2)
+    box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.2);
 }  
 
 ul li:hover {
