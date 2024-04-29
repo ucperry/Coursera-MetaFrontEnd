@@ -12,6 +12,7 @@ const shoppingListInDB = ref(database, "shoppingList")
 const inputFieldEl = document.getElementById("input-field")
 const addButtonEl = document.getElementById("add-button")
 const shoppingListEl = document.getElementById("shopping-list")
+const familyMemberSection = document.getElementById("familyMemberSection")
 
 addButtonEl.addEventListener("click", function() {
     let inputValue = inputFieldEl.value
@@ -64,14 +65,20 @@ function appendItemToShoppingListEl(item) {
     shoppingListEl.append(newEl)
 }
 
-let select = document.getElementById("selectUser")
-let familyMember = ['Nanna', 'Poppa', 'Perry', 'Rhi', 'Roo', 'Trey', 'Max', 'Chase']
+// Family Member Selector
+let family = ['Nanna', 'Poppa', 'Perry', 'Rhiannon', 'Mady', 'Trey', 'Max', 'Chase']
 
-for (let i = 0; i < familyMember.length; i++) {
-    let user = familyMember[i];
+
+for (let i = 0; i < family.length; i++) {
+    let member = family[i];
     let el = document.createElement("option");
-    el.textContent = user;
-    el.value = user;
-    select.appendChild(el);
+    el.textContent = member;
+    el.value = member;
+    familyMemberSection.appendChild(el);
+}
+
+
+familyMemberSection.onchange = function () {
+    console.log (familyMemberSection.value)
 }
 
